@@ -8,7 +8,7 @@ $terms_3nd = ['Gato','Palhaço','Botas'];
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title>Bag Of Words | Flegas</title>
+        <title>Machine Learning | Flegas</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
