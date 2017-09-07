@@ -1,7 +1,7 @@
 <?php
 namespace controllers{
 
-class Words{
+class Mlearning{
     function __construct(){
         
     }
@@ -55,7 +55,8 @@ class Words{
             return $a1;
         }
     }
-
+    
+    #return string of the array
     public function bag_to_string($arr){
         $result = NULL;
         $i = 1;
@@ -70,6 +71,30 @@ class Words{
             
         }
         return $result;
+    }
+
+    public function grouping($grouping,$leader){
+        $arr = NULL;
+        $index = NULL;
+        $length = sizeof($grouping);
+
+        for ($i=1; $i < $length ; $i++) { 
+            if (!is_int($grouping[$i])){
+                $index = sprintf("%.1f", $grouping[$i]);
+                
+                $arr[$index]= $grouping[$i];
+            }
+            else{
+                $arr[$i]= $grouping[$i];
+            }
+        }
+
+        foreach ($leader as $value) {
+            if(isset($arr[$value])){
+                var_dump($arr[$value]);
+            }
+        }
+        var_dump($arr);
     }
 }
 
